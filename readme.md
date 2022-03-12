@@ -48,7 +48,7 @@ For the autoinstall script. youre gonna need systemd. however,
 with some tinkering you dont need systemd to do this!
 
 ## Installing
-just do "git clone https://github.com/M4RT1NDEV/4y.git"
+just do "git clone --recurse-submodules https://github.com/M4RT1NDEV/4y.git"
         "cd 4y"
         "bash install.sh" or "./install.sh"
 
