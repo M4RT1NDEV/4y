@@ -34,9 +34,9 @@ void arg_help(void* data, char** pars, const int pars_count)
 void arg_version(void* data, char** pars, const int pars_count)
 {
 #ifdef GIT_VERSION_STRING
-	printf("Ly version %s\n", GIT_VERSION_STRING);
+	printf("4y version %s\n", GIT_VERSION_STRING);
 #else
-	printf("Ly version unknown\n");
+	printf("4y version unknown\n");
 #endif
 }
 
@@ -66,7 +66,7 @@ void arg_config(void* data, char** pars, const int pars_count)
 	*((char **)data) = *pars;
 }
 
-// ly!
+// 4y!
 int main(int argc, char** argv)
 {
 	// init error lib

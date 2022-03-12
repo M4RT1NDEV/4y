@@ -1,5 +1,5 @@
-#ifndef H_LY_LOGIN
-#define H_LY_LOGIN
+#ifndef H_4y_LOGIN
+#define H_4y_LOGIN
 
 #include "draw.h"
 #include "inputs.h"

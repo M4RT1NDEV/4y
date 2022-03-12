@@ -12,7 +12,7 @@
 
 #ifndef DEBUG
 	#define INI_LANG DATADIR "/lang/%s.ini"
-	#define INI_CONFIG "/etc/ly/config.ini"
+	#define INI_CONFIG "/etc/4y/config.ini"
 #else
 	#define INI_LANG "../res/lang/%s.ini"
 	#define INI_CONFIG "../res/config.ini"
@@ -286,8 +286,8 @@ void config_defaults()
 	config.path = strdup("/sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin");
 	config.restart_cmd = strdup("/sbin/shutdown -r now");
 	config.save = true;
-	config.save_file = strdup("/etc/ly/save");
-	config.service_name = strdup("ly");
+	config.save_file = strdup("/etc/4y/save");
+	config.service_name = strdup("4y");
 	config.shutdown_cmd = strdup("/sbin/shutdown -a now");
 	config.term_reset_cmd = strdup("/usr/bin/tput reset");
 	config.tty = 2;

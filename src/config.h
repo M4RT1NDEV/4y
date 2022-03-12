@@ -1,5 +1,5 @@
-#ifndef H_LY_CONFIG
-#define H_LY_CONFIG
+#ifndef H_4y_CONFIG
+#define H_4y_CONFIG
 
 #include <stdbool.h>
 #include <stdint.h>
