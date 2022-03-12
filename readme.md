@@ -1,6 +1,7 @@
-# Ly - a TUI display manager
+# 4y - Ly Fork - TUI display manager
 ![Ly screenshot](https://user-images.githubusercontent.com/5473047/88958888-65efbf80-d2a1-11ea-8ae5-3f263bce9cce.png "Ly screenshot")
 
+4y is a fork of Ly, It is made to be easier and have an auto install command.
 Ly is a lightweight TUI (ncurses-like) display manager for Linux and BSD.
 
 ## Dependencies
@@ -35,14 +36,12 @@ The following desktop environments were tested with success
  - maxx
  - windowmaker
 
-Ly should work with any X desktop environment, and provides
+4y should work with any X desktop environment, and provides
 basic wayland support (sway works very well, for example).
 
 ## systemd?
-Unlike what you may have heard, Ly does not require `systemd`,
-and was even specifically designed not to depend on `logind`.
-You should be able to make it work easily with a better init,
-changing the source code won't be necessary :)
+For the autoinstall script. youre gonna need systemd. however,
+with some tinkering you dont need systemd to do this!
 
 ## Cloning and Compiling
 Clone the repository
