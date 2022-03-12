@@ -1,4 +1,4 @@
-NAME = ly
+NAME = 4y
 CC = gcc
 FLAGS = -std=c99 -pedantic -g
 FLAGS+= -Wall -Wextra -Werror=vla -Wno-unused-parameter
@@ -20,7 +20,7 @@ SUBD = sub
 RESD = res
 TESTD = tests
 
-DATADIR ?= ${DESTDIR}/etc/ly
+DATADIR ?= ${DESTDIR}/etc/4y
 FLAGS+= -DDATADIR=\"$(DATADIR)\"
 
 INCL = -I$(SRCD)
@@ -71,34 +71,34 @@ leakgrind: $(BIND)/$(NAME)
 
 install: $(BIND)/$(NAME)
 	@echo "installing"
-	@install -dZ ${DESTDIR}/etc/ly
+	@install -dZ ${DESTDIR}/etc/4y
 	@install -DZ $(BIND)/$(NAME) -t ${DESTDIR}/usr/bin
-	@install -DZ $(RESD)/config.ini -t ${DESTDIR}/etc/ly
+	@install -DZ $(RESD)/config.ini -t ${DESTDIR}/etc/4y
 	@install -DZ $(RESD)/xsetup.sh -t $(DATADIR)
 	@install -DZ $(RESD)/wsetup.sh -t $(DATADIR)
 	@install -dZ $(DATADIR)/lang
 	@install -DZ $(RESD)/lang/* -t $(DATADIR)/lang
-	@install -DZ $(RESD)/ly.service -m 644 -t ${DESTDIR}/usr/lib/systemd/system
-	@install -DZ $(RESD)/pam.d/ly -m 644 -t ${DESTDIR}/etc/pam.d
+	@install -DZ $(RESD)/4y.service -m 644 -t ${DESTDIR}/usr/lib/systemd/system
+	@install -DZ $(RESD)/pam.d/4y -m 644 -t ${DESTDIR}/etc/pam.d
 
 installnoconf: $(BIND)/$(NAME)
 	@echo "installing without the configuration file"
-	@install -dZ ${DESTDIR}/etc/ly
+	@install -dZ ${DESTDIR}/etc/4y
 	@install -DZ $(BIND)/$(NAME) -t ${DESTDIR}/usr/bin
 	@install -DZ $(RESD)/xsetup.sh -t $(DATADIR)
 	@install -DZ $(RESD)/wsetup.sh -t $(DATADIR)
 	@install -dZ $(DATADIR)/lang
 	@install -DZ $(RESD)/lang/* -t $(DATADIR)/lang
-	@install -DZ $(RESD)/ly.service -m 644 -t ${DESTDIR}/usr/lib/systemd/system
-	@install -DZ $(RESD)/pam.d/ly -m 644 -t ${DESTDIR}/etc/pam.d
+	@install -DZ $(RESD)/4y.service -m 644 -t ${DESTDIR}/usr/lib/systemd/system
+	@install -DZ $(RESD)/pam.d/4y -m 644 -t ${DESTDIR}/etc/pam.d
 
 uninstall:
 	@echo "uninstalling"
-	@rm -rf ${DESTDIR}/etc/ly
+	@rm -rf ${DESTDIR}/etc/4y
 	@rm -rf $(DATADIR)
-	@rm -f ${DESTDIR}/usr/bin/ly
-	@rm -f ${DESTDIR}/usr/lib/systemd/system/ly.service
-	@rm -f ${DESTDIR}/etc/pam.d/ly
+	@rm -f ${DESTDIR}/usr/bin/4y
+	@rm -f ${DESTDIR}/usr/lib/systemd/system/4y.service
+	@rm -f ${DESTDIR}/etc/pam.d/4y
 
 clean:
 	@echo "cleaning"
