@@ -86,7 +86,7 @@ just uncomment `animate = true` in `/etc/ly/config.ini`. You may also
 disable the main box borders with `hide_borders = true`.
 
 ## Additional Information
-The name "4y" comes from the 4 in M4RT1ND3V and the y is from
+The name "4y" comes from the 4 in M4RT1NDEV and the y is from
 the name ly which is the login manager this is a fork of.
 
 The name "Ly" is a tribute to the fairy from the game Rayman.
