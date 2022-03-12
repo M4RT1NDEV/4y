@@ -43,41 +43,13 @@ basic wayland support (sway works very well, for example).
 For the autoinstall script. youre gonna need systemd. however,
 with some tinkering you dont need systemd to do this!
 
-## Cloning and Compiling
-Clone the repository
-```
-git clone --recurse-submodules https://github.com/nullgemm/ly.git
-```
-
-Compile
-```
-make
-```
-
-Test in the configured tty (tty2 by default)
-or a terminal emulator (but desktop environments won't start)
-```
-sudo make run
-```
-
-Install Ly and the provided systemd service file
-```
-sudo make install
-```
-
-Enable the service
-```
-sudo systemctl enable ly.service
-```
-
-If you need to switch between ttys after Ly's start you also have to
-disable getty on Ly's tty to prevent "login" from spawning on top of it
-```
-sudo systemctl disable getty@tty2.service
-```
+## Installing
+just do "git clone https://github.com/M4RT1NDEV/4y.git"
+        "cd 4y"
+        "bash install.sh" or "./install.sh"
 
 ## Configuration
-You can find all the configuration in `/etc/ly/config.ini`.
+You can find all the configuration in `/etc/4y/config.ini`.
 The file is commented, and includes the default values.
 
 ## Controls
@@ -110,5 +82,8 @@ just uncomment `animate = true` in `/etc/ly/config.ini`. You may also
 disable the main box borders with `hide_borders = true`.
 
 ## Additional Information
+The name "4y" comes from the 4 in M4RT1ND3V and the y is from
+the name ly which is the login manager this is a fork of.
+
 The name "Ly" is a tribute to the fairy from the game Rayman.
 Ly was tested by oxodao, who is some seriously awesome dude.
