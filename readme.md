@@ -1,4 +1,4 @@
-# 4y - Ly Fork - TUI display manager
+# 4y - Ly Fork - TUI display manager UNFINISHED RIGHT NOW ITS JUST UNEDITED LY THERES NO REASON TO INSTALL THIS
 ![Ly screenshot](https://user-images.githubusercontent.com/5473047/88958888-65efbf80-d2a1-11ea-8ae5-3f263bce9cce.png "Ly screenshot")
 
 4y is a fork of Ly, It is made to be easier and have an auto install command.
